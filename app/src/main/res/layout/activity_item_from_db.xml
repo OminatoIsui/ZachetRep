@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context="com.example.work.lyrics.ItemActivityFromDB">
+
+    <RelativeLayout
+        android:id="@+id/ImLinear"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:background="@color/Yellow"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Impreview"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp" />
+
+        <TextView
+            android:id="@+id/TitleVirew"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Impreview"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/Impreview"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImLinear"
+        android:layout_above="@+id/btns"
+        android:layout_alignParentStart="true"
+        android:background="@color/Black">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <WebView
+                android:id="@+id/YouTView"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/Black"
+                />
+            <WebView
+                android:id="@+id/LyricsView"
+                android:background="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <Button
+            android:id="@+id/backs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Yellow"
+            android:text="@string/backbtntext"
+            android:textSize="28sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Yellow"
+            android:textSize="28sp"
+            android:layout_weight="1"
+            android:text="@string/nextbtntext"/>
+    </LinearLayout>
+
+</RelativeLayout>

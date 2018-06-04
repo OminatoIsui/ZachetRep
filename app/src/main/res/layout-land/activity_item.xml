@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/Impreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp" />
+        <TextView
+            android:id="@+id/TitleVirew"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Impreview"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/Impreview"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+            <WebView
+                android:id="@+id/YouTView"
+                android:layout_width="match_parent"
+                android:background="@color/Black"
+                android:layout_height="match_parent"
+                />
+            <WebView
+                android:id="@+id/LyricsView"
+                android:background="@color/Black"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+            <Button
+                android:id="@+id/btnplus"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/Yellow"
+                android:textSize="28sp"
+                android:text="+"/>
+    </RelativeLayout>
+</RelativeLayout>

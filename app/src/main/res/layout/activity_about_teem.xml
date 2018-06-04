@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.work.lyrics.AboutTeemActivity"
+    android:background="@color/Black">
+<TextView
+    android:id="@+id/txt"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:textColor="@color/Yellow"
+    android:textSize="38sp"
+    android:gravity="center"
+    android:text="Разработали к зачету:"/>
+
+    <TextView
+        android:id="@+id/txtrule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textAlignment="center"
+        android:text="Логика приложения:"
+        android:textColor="@color/Yellow"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/txtmainname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtrule"
+        android:textAlignment="center"
+        android:text="Поздняков Антон"
+        android:textColor="@color/Yellow"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/txtrule1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtmainname"
+        android:text="Дизайн и идея:"
+        android:textAlignment="center"
+        android:textColor="@color/Yellow"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtdevname1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtrule1"
+        android:textAlignment="center"
+        android:text="Мельник Клим"
+        android:textColor="@color/Yellow"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtdevname2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtdevname1"
+        android:textAlignment="center"
+        android:text="Влад Алхимов"
+        android:textColor="@color/Yellow"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="72dp"
+        android:text="ГЫ ГЫ :D"
+        android:textAlignment="center"
+        android:textColor="@color/Yellow"
+        android:textSize="48sp" />
+</RelativeLayout>

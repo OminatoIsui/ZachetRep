@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black">
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Black"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/YouTView"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:background="@color/Black" />
+
+            <WebView
+                android:id="@+id/LyricsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Black"
+                android:foregroundGravity="bottom" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/backs"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/Yellow"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:text="@string/backbtntext"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/Yellow"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:text="@string/nextbtntext"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/Impreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/Black"/>
+    <TextView
+        android:id="@+id/TitleVirew"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <Button
+        android:id="@+id/btnplus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/Yellow"
+        android:textSize="28sp"
+        android:text="+"/>
+</FrameLayout>
