@@ -25,7 +25,7 @@
         android:textAlignment="center"
         android:text="Логика приложения:"
         android:textColor="@color/Yellow"
-        android:textSize="28sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/txtmainname"
@@ -36,7 +36,7 @@
         android:textAlignment="center"
         android:text="Поздняков Антон"
         android:textColor="@color/Yellow"
-        android:textSize="28sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/txtrule1"
