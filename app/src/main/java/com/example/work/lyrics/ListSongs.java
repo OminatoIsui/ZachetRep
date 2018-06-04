@@ -56,6 +56,7 @@ public class ListSongs extends AppCompatActivity implements  ViewGroup.OnClickLi
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
+              //  Search
                 return false;
             }
 
